@@ -2,7 +2,7 @@ include(FindPackageHandleStandardArgs)
 
 find_path (Halcon_INCLUDE_DIR halconcpp/HalconCpp.h
   PATHS
-  $ENV{HALCON_ROOT}/include
+  $ENV{HALCONROOT}/include
   /usr/local/include
   /usr/include
   /sw/include
@@ -11,32 +11,32 @@ find_path (Halcon_INCLUDE_DIR halconcpp/HalconCpp.h
 
 find_library (Halcon_ENGINE_LIBRARY hdevenginecpp
   PATHS
-  $ENV{HALCON_ROOT}/lib/x64-linux
-  /usr/local/lib/x64-linux
-  /usr/lib/x64-linux
-  /lib/x64-linux
-  /sw/lib/x64-linux
-  /opt/halcon/lib/x64-linux
+  $ENV{HALCONROOT}/lib/aarch64-linux
+  /usr/local/lib/aarch64-linux
+  /usr/lib/aarch64-linux
+  /lib/aarch64-linux
+  /sw/lib/aarch64-linux
+  /opt/halcon/lib/aarch64-linux
 )
 
 find_library (Halcon_CPP_LIBRARY halconcpp
   PATHS
-  $ENV{HALCON_ROOT}/lib/x64-linux
-  /usr/local/lib/x64-linux
-  /usr/lib/x64-linux
-  /lib/x64-linux
-  /sw/lib/x64-linux
-  /opt/halcon/lib/x64-linux
+  $ENV{HALCONROOT}/lib/aarch64-linux
+  /usr/local/lib/aarch64-linux
+  /usr/lib/aarch64-linux
+  /lib/aarch64-linux
+  /sw/lib/aarch64-linux
+  /opt/halcon/lib/aarch64-linux
 )
 
 find_library (Halcon_LIBRARY halcon
   PATHS
-  $ENV{HALCON_ROOT}/lib/x64-linux
-  /usr/local/lib/x64-linux
-  /usr/lib/x64-linux
-  /lib/x64-linux
-  /sw/lib/x64-linux
-  /opt/halcon/lib/x64-linux
+  $ENV{HALCONROOT}/lib/aarch64-linux
+  /usr/local/lib/aarch64-linux
+  /usr/lib/aarch64-linux
+  /lib/aarch64-linux
+  /sw/lib/aarch64-linux
+  /opt/halcon/lib/aarch64-linux
 )
 
 
